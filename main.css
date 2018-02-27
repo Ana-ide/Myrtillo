@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #3FBFBF;
+  background-image: linear-gradient(to bottom, #3FBFBF, white);
+}
+
+h1 {
+font-weight: bold;
+font-size: 40px;
+letter-spacing: 2px;
+margin-bottom: 0px;
+  }
+
+.inputSection {
+  margin: 30px 0px 30px 0px;
+  width: 130px;
+}
+
+.inputs {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  }
+
+input {
+margin-top: 10px;
+  }
+
+.addOption{
+  margin-top: 10px
+  }
