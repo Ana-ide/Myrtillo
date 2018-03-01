@@ -6,14 +6,28 @@
   <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
 <body>
-  <h1>What</h1>
+  <h1>What should I choose today?</h1>
   <img border="0" src="http://www.cactus-art.biz/schede/MYRTILLOCACTUS/Myrtillocactus_geometrizans/Myrtillocactus_geometrizanz_cristata/Mirtillocactus_geometrizans_cristata_810.jpg" width="210" height="210">
   <div class ="inputSection">
     <div class ="inputs">
-      <input placeholder="lala"></input>
+      <input placeholder="What..."></input>
     </div>
-      <button class="addOption"; style="background-color: #BF3FBF">+</button>
+      <button class="addOption"; style="background-color: #BF3FBF">OR</button>
   </div>
+  <div class="resultSection"></div>
     <button>Click here</button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+     $(function() {
+       $('.resultSection').hide()
+
+       var add_option = function() {
+         $('.inputs').append('<input></input>')
+       }
+
+       $('.addOption').click(add_option)
+     })
+    </script>
 </body>
 </html>
